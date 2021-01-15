@@ -145,6 +145,28 @@
 
 }
 
+@media (height: 768px) {
+    .intro {
+        position:absolute;
+        top: 20em;
+        right: 43%;
+        transform: scale(2.5);
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        }
+}
+
+@media (height: 800px) {
+    .intro {
+        position:absolute;
+        top: 20em;
+        right: 43%;
+        transform: scale(2.5);
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        }
+}
+
 .container-fluid {
     padding:0;
     margin:0;
