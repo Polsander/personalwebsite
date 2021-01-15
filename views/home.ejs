@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Erdmann</title>
+    <!-- ============BOOTSTRAP=========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- ================================ -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Jquery Below! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- =================== -->
+
+
+</head>
+
+
+
+<!--========================== BODY STARTS HERE ======================= -->
+
+<body>
+    <div class="loadscreen">
+        <div class="container loadOverlay">
+            <div class="d-flex">
+                <div class="typewriter">
+                    <div class="intro" id="intro"></div>
+                </div>
+                <button class="start btn btn-lg shadow-none"> ENTER </button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="main justify-content-center col-12">
+                    <div class="col-4-lg col-sm-12 ml-3">
+                        <div class="icons ml-3">
+                            <ul>
+                                <li>
+                                    <a width="40" height="40" target="_blank" href="https://www.linkedin.com/in/oliver-erdmann-85811b204">
+                                        <svg class="linkdin" xmlns="http://www.w3.org/2000/svg"
+                                            width="40" height="40" fill="currentColor"
+                                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://github.com/Polsander">
+                                        <svg class="github" xmlns="http://www.w3.org/2000/svg"
+                                            width="40" height="40" fill="currentColor"
+                                            class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="mailto:oerdmann@uwaterloo.ca">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                            height="40" fill="currentColor"
+                                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40"
+                                            height="40" fill="currentColor"
+                                            class="bi bi-file-earmark-person-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="heading text-center">
+                        <h1 class="text-center display-2"> Oliver Erdmann </h1>
+                        <h2 class="mt-2">Web Developer - Future Engineer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-3 col-sm-12 me-auto mt-5">
+                    <img class="profile img-fluid"
+                        src="https://res.cloudinary.com/brothersingaming/image/upload/v1610497115/toonyphoto_2_1_s6pdol.png"
+                        alt="">
+                </div>
+                <div class="col-lg-7 mt-5">
+                    <div class="text">
+                        <p class="lead">Hi there! My name is Oliver, and welcome to my personal
+                            website.
+                            <br><br>
+                            I'm a second year chemical engineering student studying at the
+                            University of Waterloo and I am currently
+                            searching for employment opportunities this summer. I have a passion for
+                            programming, code, design, and creating music.
+                            <br>When I'm not working I often like to scour the web and watch live
+                            concerts from home (too bad we're in a pandemic
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-emoji-frown-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm-2.715 5.933a.5.5 0 0 1-.183-.683A4.498 4.498 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.498 3.498 0 0 0 8 10.5a3.498 3.498 0 0 0-3.032 1.75.5.5 0 0 1-.683.183zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z" />
+                            </svg>).
+                        </p>
+                    </div>
+                    <div class="text2 mt-3">
+                        <p class="lead">So what can I find on this site?</p>
+                    </div>
+
+                    <div class="text3 mt-3">
+                        <p class="lead">
+                            Great Question! <br>
+                            You can find links to my social media (github, linkedin, etc.), my
+                            skills in programming and software, contact information,
+                            and a list of my favourite web apps and projects that I have done from
+                            scratch (such as this website!). Just scroll down!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 block">
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-lg-4 col-sm-12 mt-3">
+                            <div class="card mx-auto">
+                                <div class="card-body softie">
+                                    <h5 class="card-title text-center mb-2 display-4 ">Software</h5>
+                                    <h6 class="card-subtitle mt-3 mb-2 text-center">Languages I
+                                        Speak</h6>
+                                    <div class="langs text-center">
+                                        <ul class='languages'>
+                                            <li>JavaScript,</li>
+                                            <li>Python,</li>
+                                            <li>HTML5,</li>
+                                            <li>CSS3</li>
+                                        </ul>
+                                    </div>
+                                    <br><br>
+                                    <h6 class="card-subtitle mb-2 text-center">Technologies</h6>
+                                    <ul class="text-center techs">
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                        <li>React</li>
+                                        <li>Redux</li>
+                                        <li>MongoDB</li>
+                                        <li>Git</li>
+                                        <li>Git Bash</li>
+                                    </ul>
+                                    <h6 class="card-subtitle mt-4 mb-2 text-center">Dev Tools I Use
+                                    </h6>
+                                    <ul class="text-center dev-tools">
+                                        <li>NPM</li>
+                                        <li>Bootstrap</li>
+                                        <li>JQuery</li>
+                                        <li>VSCode</li>
+                                        <li>Chrome Developer Tools</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 mt-3">
+                            <div class="card mx-auto" data-aos='fade-in'>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center mb-2 display-4">Projects</h5>
+                                    <a target="_blank" href="http://www.BrothersInGaming2.com">
+                                    <h6 class="card-subtitle mt-3 mb-2 text-center">
+                                        BrothersInGaming2.com</h6></a>
+                                    <p> A blog site pretained to video games created by my friend
+                                        and me. <br>
+                                        The site uses full CRUD functionality when publishing posts
+                                        and comments, and also has a full implementation of
+                                        a REST architecture. </p>
+                                        <a href="">
+                                    <h6 class="card-subtitle mb-2 text-center">OliverErdmann.com
+                                    </h6> </a>
+                                    <p> My own personal website that you are viewing right now.
+                                        Created by using Javascript, HTML, CSS, Bootstrap, and
+                                        JQuery.
+                                        <br><br>
+                                        A simplistic yet eventful page to demonstrate many of my
+                                        capabilities while
+                                        making the layout easy for your eyes.
+                                    </p>
+                                    <a target="_blank" href="https://github.com/Polsander/yelpcamp">
+                                    <h6 class="card-subtitle mb-2 text-center">YelpCamp</h6>
+                                    </a>
+                                    <p>
+                                        A Udemy code-along project I completed from following Colt
+                                        Steele's full stack web developer course.
+
+                                        Worked and used many features such as error-handling,
+                                        middleware, authentication, authorization, design, REST
+                                        functionality, full CRUD, and the use of different
+                                        frameworks and libraries.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="spacing2"></div>
+
+        <h3 class="text-center">Want to see more projects? Check out my Resumé below!</h3>
+        <div class="text-center mt-3">
+            <img class="img-fluid telescope"
+                src="https://www.svgrepo.com/show/7357/man-looking-by-a-telescope.svg" alt="">
+        </div>
+        <div class="text-center mt-2">
+            <button class="btn btn-success btn-lg">RESUMÉ</button>
+        </div>
+
+
+        <footer>
+            <h3 class="text-center display-5">Thanks for Visiting! Do widzenia!</h3>
+            <br>
+
+            <div class="icons pb-3 text-center">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/oliver-erdmann-85811b204">
+                            <svg class="linkdin" xmlns="http://www.w3.org/2000/svg" width="50"
+                                height="50" fill="currentColor" class="bi bi-linkedin"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Polsander">
+                            <svg class="github" xmlns="http://www.w3.org/2000/svg" width="50"
+                                height="50" fill="currentColor" class="bi bi-github"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:oerdmann@uwaterloo.ca">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                fill="currentColor" class="bi bi-file-earmark-person-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </footer>
+
+
+
+
+
+
+    </div>
+
+    <!-- ==================Strict Jquery Manipulation=================== -->
+    <script src="jquery.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script>
+        const intro = document.getElementById('intro');
+
+        const typewriter = new Typewriter(intro, {
+            loop: false,
+            delay: 75,
+        });
+
+        typewriter
+            .pauseFor(1000)
+            .typeString('Welcome to My Website!')
+            .start();
+    </script>
+
+    <!-- ============================= -->
+</body>
+
+
+
+</html>
